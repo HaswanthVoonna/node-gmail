@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Mail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="has-text-centered is-size-3 mb-4">Send Mail</h2>
+        <form action="/send" method="POST">
+            <div class="field">
+                <label class="label" for="to">To Email</label>
+                <div class="control">
+                    <input class="input" id="to" name="to" type="text" placeholder="To Email">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="from">From Email</label>
+                <div class="control">
+                    <input class="input" id="from" name="from" type="text" placeholder="From Email">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="subject">Subject</label>
+                <div class="control">
+                    <input class="input" id="subject" name="subject" type="text" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="msg">Message</label>
+                <div class="control">
+                    <textarea class="textarea" id="msg" name="msg" placeholder="Message"></textarea>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
